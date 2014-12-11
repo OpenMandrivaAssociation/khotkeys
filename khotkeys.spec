@@ -32,7 +32,8 @@ KDE Plasma 5 Hotkey support
 %setup -qn %{name}-%{plasmaver}
 %apply_patches
 
-%cmake -G Ninja
+%cmake -G Ninja \
+	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %build
 ninja -C build
@@ -43,8 +44,8 @@ DESTDIR="%{buildroot}" ninja -C build install %{?_smp_mflags}
 
 %files -f khotkeys.lang
 %{_libdir}/cmake/KHotKeysDBusInterface
-%{_libdir}/plugins/kcm_hotkeys.so
-%{_libdir}/plugins/kded_khotkeys.so
+%{_libdir}/qt5/plugins/kcm_hotkeys.so
+%{_libdir}/qt5/plugins/kded_khotkeys.so
 %{_datadir}/dbus-1/interfaces/org.kde.khotkeys.xml
 %{_datadir}/khotkeys
 %{_datadir}/kservices5/kded/*
