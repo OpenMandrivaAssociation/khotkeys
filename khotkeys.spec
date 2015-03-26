@@ -3,7 +3,7 @@
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 
 Name: khotkeys
-Version: 5.2.1
+Version: 5.2.2
 Release: 1
 Source0: ftp://ftp.kde.org/pub/kde/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: Hotkeys support for KDE Plasma 5
@@ -24,10 +24,14 @@ BuildRequires: cmake(KF5Solid)
 BuildRequires: cmake(KF5Plasma)
 BuildRequires: cmake(KF5KCMUtils)
 BuildRequires: cmake(LibKWorkspace)
+BuildRequires: pkgconfig(Qt5Core)
+BuildRequires: pkgconfig(Qt5Test)
+BuildRequires: pkgconfig(Qt5X11Extras)
+BuildRequires: pkgconfig(x11)
 BuildRequires: ninja
 
 %description
-KDE Plasma 5 Hotkey support
+KDE Plasma 5 Hotkey support.
 
 %libpackage khotkeysprivate 5
 
