@@ -3,7 +3,7 @@
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 
 Name: khotkeys
-Version: 5.3.0
+Version: 5.3.1
 Release: 1
 Source0: ftp://ftp.kde.org/pub/kde/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: Hotkeys support for KDE Plasma 5
