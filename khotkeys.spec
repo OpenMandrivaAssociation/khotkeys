@@ -5,7 +5,7 @@
 Name: khotkeys
 Version: 5.3.2
 Release: 1
-Source0: ftp://ftp.kde.org/pub/kde/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
+Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: Hotkeys support for KDE Plasma 5
 URL: http://kde.org/
 License: GPL
