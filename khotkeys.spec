@@ -3,7 +3,7 @@
 %define plasmaver %(echo %{version} |cut -d. -f1-3)
 
 Name: khotkeys
-Version: 5.6.5
+Version: 5.7.0
 Release: 1
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: Hotkeys support for KDE Plasma 5
@@ -46,7 +46,7 @@ KDE Plasma 5 Hotkey support.
 %install
 %ninja_install -C build
 
-%find_lang khotkeys
+%find_lang khotkeys || touch khotkeys.lang
 
 %files -f khotkeys.lang
 %{_libdir}/cmake/KHotKeysDBusInterface
