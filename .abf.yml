@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   khotkeys-5.12.3.tar.xz: 90096d7cd97f0763ed4ee7349c8ed8dacafbe011
+sources:
+  khotkeys-5.12.6.tar.xz: 5b6fbd1d0c2022cc35ee4dd0df8a40ee6a295a3a
