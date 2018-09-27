@@ -4,7 +4,7 @@
 
 Name: khotkeys
 Version: 5.13.90
-Release: 1
+Release: 2
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: Hotkeys support for KDE Plasma 5
 URL: http://kde.org/
@@ -35,6 +35,18 @@ KDE Plasma 5 Hotkey support.
 
 %libpackage khotkeysprivate 5
 
+%package devel
+Summary: Development files for %{name}
+Group: Development/KDE and Qt
+Requires: %{name} >= %{EVRD}
+Requires: %{mklibname khotkeysprivate 5} >= %{EVRD}
+
+%description devel
+Development files for %{name}.
+
+%files
+%{_libdir}/cmake/KHotKeysDBusInterface
+
 %prep
 %setup -qn %{name}-%{plasmaver}
 %apply_patches
@@ -50,7 +62,6 @@ KDE Plasma 5 Hotkey support.
 %find_lang khotkeys --all-name --with-html || touch khotkeys.lang
 
 %files -f khotkeys.lang
-%{_libdir}/cmake/KHotKeysDBusInterface
 %{_libdir}/qt5/plugins/kcm_hotkeys.so
 %{_libdir}/qt5/plugins/kf5/kded/khotkeys.so
 %{_datadir}/dbus-1/interfaces/org.kde.khotkeys.xml
