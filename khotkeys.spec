@@ -44,7 +44,7 @@ Requires: %{mklibname khotkeysprivate 5} >= %{EVRD}
 %description devel
 Development files for %{name}.
 
-%files
+%files devel
 %{_libdir}/cmake/KHotKeysDBusInterface
 
 %prep
