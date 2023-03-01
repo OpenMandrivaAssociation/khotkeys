@@ -39,7 +39,7 @@ KDE Plasma 5 Hotkey support.
 Summary: Development files for %{name}
 Group: Development/KDE and Qt
 Requires: %{name} >= %{EVRD}
-Requires: %{mklibname khotkeysprivate 5} >= %{EVRD}
+Requires: %{mklibname khotkeysprivate} >= %{EVRD}
 
 %description devel
 Development files for %{name}.
