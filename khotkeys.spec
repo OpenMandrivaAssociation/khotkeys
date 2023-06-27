@@ -24,7 +24,7 @@ BuildRequires: cmake(KF5KHtml)
 BuildRequires: cmake(KF5Solid)
 BuildRequires: cmake(KF5Plasma)
 BuildRequires: cmake(KF5KCMUtils)
-BuildRequires: cmake(LibKWorkspace)
+BuildRequires: cmake(LibKWorkspace) < 5.27.50
 BuildRequires: pkgconfig(Qt5Core)
 BuildRequires: pkgconfig(Qt5Test)
 BuildRequires: pkgconfig(Qt5X11Extras)
