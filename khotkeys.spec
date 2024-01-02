@@ -4,7 +4,7 @@
 
 Name: khotkeys
 Version:	5.27.10
-Release:	1
+Release:	2
 Source0: http://download.kde.org/%{stable}/plasma/%{plasmaver}/%{name}-%{version}.tar.xz
 Summary: Hotkeys support for KDE Plasma 5
 URL: http://kde.org/
